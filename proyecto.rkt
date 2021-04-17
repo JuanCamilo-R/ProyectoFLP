@@ -48,7 +48,7 @@
     (expression (boolean) boolean-exp)
     (expression ( identifier "->" expression ) allot-exp)  
     (expression ( "x8" "(" number (arbno "," number ) ")" ) octal-exp) 
-    (expression ( "[" (separated-list expression ";") "]" ) list-exp)
+    (expression ( "[" (separated-list expression ",") "]" ) list-exp)
     (expression ( "vector" "[" (separated-list expression ";" ) "]" ) vector-exp)
     (expression ("record" "{" identifier "=" expression  (arbno "," identifier "=" expression)  "}") record-exp)
     (expression (expr-bool) bool-exp)
@@ -58,7 +58,7 @@
     (expr-bool (oper-a-bool "(" expr-bool ")" ) oper-a-exp)
     (expression ( "sequence" "(" expression (arbno ";" expression) ")") sequence-exp)
     (expression ( "if" "(" expr-bool ")" "then" "{" expression "}" "else"  "{" expression "}") if-exp)
-    (expression ( "cond" (arbno "[" expression "]" expression ) "else" expression ) cond-exp)
+    (expression ( "cond" (arbno "[" expr-bool "]" expression ) "else" expression ) cond-exp)
     (expression ( "for" "(" identifier "=" expression ";" decr-incre-exp expression ")" "{" expression "}") for-exp)
     (decr-incre-exp ("to") to-exp)
     (decr-incre-exp ("downto") downto-exp)
@@ -66,13 +66,19 @@
     (expression ("(" expression primitive expression ")" ) primapp-bin-exp)
     (expression (primitive-un "(" expression ")" ) primapp-un-exp)
     ;strings' expressions.
-    (expression (primitive-bin-string "(" expression "," expression ")") primapp-bin-string)  
-    (expression (primitive-un-string "(" expression ")" ) primapp-un-string-exp)
+    (expression (primitive-bin-string "(" expression "," expression ")") primapp-bin-string) ;concat  
+    (expression (primitive-un-string "(" expression ")" ) primapp-un-string-exp) ;length
     ;lists' expressions.
-    (expression ( primitive-list "("(separated-list expression ",") ")") primapp-list-exp)  
+    (expression (primitive-null-list) null-list-exp)
+    (expression (primitive-list "("(separated-list expression ",") ")") primapp-un-list-exp) ;create-list, top, pop, null?
+    (expression (primitive-bin-list "(" expression "," expression ")") primapp-bin-list-exp) ;append
     ;vectors' expressions.
     (expression (primitive-vector "(" number expression ")") primapp-vector) ;ref-vector, set-vector.
     (expression ("#"primitive-vector "(" (separated-list expression ",") ")" ) primapp-create-vector) ;create vector.
+
+    ;records' expressions.
+    (expression (primitive-bin-record "(" number expression ")" ) primapp-bin-record) ;set-record, ref-record.
+    (expression (primitive-un-record "(" expression ")" ) primapp-un-record) ;record?
     (primitive ("+") add-prim)
     (primitive ("-") sub-prim)
     (primitive ("*") mult-prim)
@@ -80,27 +86,35 @@
     (primitive ("/") div-prim)
     (primitive-un ("++") add1-prim)
     (primitive-un ("--") sub1-prim)
-    (primitive-un-string ("length") length-exp)
-    (primitive-bin-string ("concat") concat-exp)
-    (primitive-un ("null?") null-pred)
-    (primitive-vector ("ref-vector") ref-vector)
-    (primitive-vector ("set-vector") set-vector)
-    (primitive-un ("vector?") vector-pred)
-    (primitive-list ("list") create-list-exp)
-    (primitive-vector ("create-vector") create-vector)  
-    (primitive-list ("top") head-list-exp)
-    (primitive-list ("pop") tail-list-exp)
-    (primitive ("append") append-exp)
-    (pred-prim ("<") less)
-    (pred-prim (">") greater)
-    (pred-prim ("<=") less-equal)
-    (pred-prim (">=") greater-equal)
-    (pred-prim ("==") equal)
-    (pred-prim ("<>") different)
-    (oper-bin-bool ("and") and)
-    (oper-bin-bool ("or") or)
-    (oper-bin-bool ("xor") xor)
-    (oper-a-bool ("not") not)
+    (primitive-un-string ("length") length-prim)
+    (primitive-bin-string ("concat") concat-prim)
+    ;lists
+    (primitive-null-list ("null") null-list-prim)
+    (primitive-list ("top") head-list-prim)
+    (primitive-list ("pop") tail-list-prim)
+    (primitive-list ("null?") null-pred-prim)
+    (primitive-list ("create-list") create-list-prim)
+    (primitive-bin-list ("append") append-list-prim)
+    ;vectors
+    (primitive-vector ("ref-vector") ref-vector-prim)
+    (primitive-vector ("set-vector") set-vector-prim)
+    (primitive-vector ("vector?") vector-pred-prim)
+    (primitive-vector ("create-vector") create-vector-prim)
+     ;records
+    (primitive-un-record ("record?") record-pred-prim)
+    (primitive-un-record ("create-record") record-recreate-prim)
+    (primitive-bin-record ("ref-record") ref-record-prim)
+    (primitive-bin-record ("set-record") set-record-prim)
+    (pred-prim ("<") less-prim)
+    (pred-prim (">") greater-prim)
+    (pred-prim ("<=") less-equal-prim)
+    (pred-prim (">=") greater-equal-prim)
+    (pred-prim ("==") equal-prim)
+    (pred-prim ("<>") different-prim)
+    (oper-bin-bool ("and") and-prim)
+    (oper-bin-bool ("or") or-prim)
+    (oper-bin-bool ("xor") xor-prim)
+    (oper-a-bool ("not") not-prim)
    )
   )
 
