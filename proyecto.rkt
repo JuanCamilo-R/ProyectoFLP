@@ -62,9 +62,17 @@
     (expression ( "for" "(" identifier "=" expression ";" decr-incre-exp expression ")" "{" expression "}") for-exp)
     (decr-incre-exp ("to") to-exp)
     (decr-incre-exp ("downto") downto-exp)
+    ;numbers' or octals' expressions.
     (expression ("(" expression primitive expression ")" ) primapp-bin-exp)
     (expression (primitive-un "(" expression ")" ) primapp-un-exp)
-    (expression ( primitive-list "("(separated-list expression ",") ")") primapp-list-exp)
+    ;strings' expressions.
+    (expression (primitive-bin-string "(" expression "," expression ")") primapp-bin-string)  
+    (expression (primitive-un-string "(" expression ")" ) primapp-un-string-exp)
+    ;lists' expressions.
+    (expression ( primitive-list "("(separated-list expression ",") ")") primapp-list-exp)  
+    ;vectors' expressions.
+    (expression (primitive-vector "(" number expression ")") primapp-vector) ;ref-vector, set-vector.
+    (expression ("#"primitive-vector "(" (separated-list expression ",") ")" ) primapp-create-vector) ;create vector.
     (primitive ("+") add-prim)
     (primitive ("-") sub-prim)
     (primitive ("*") mult-prim)
@@ -72,10 +80,14 @@
     (primitive ("/") div-prim)
     (primitive-un ("++") add1-prim)
     (primitive-un ("--") sub1-prim)
-    (primitive-un ("length") length-exp)
-    (primitive ("concat") concat-exp)
-    (primitive-un ("null?") null-exp)
+    (primitive-un-string ("length") length-exp)
+    (primitive-bin-string ("concat") concat-exp)
+    (primitive-un ("null?") null-pred)
+    (primitive-vector ("ref-vector") ref-vector)
+    (primitive-vector ("set-vector") set-vector)
+    (primitive-un ("vector?") vector-pred)
     (primitive-list ("list") create-list-exp)
+    (primitive-vector ("create-vector") create-vector)  
     (primitive-list ("top") head-list-exp)
     (primitive-list ("pop") tail-list-exp)
     (primitive ("append") append-exp)
