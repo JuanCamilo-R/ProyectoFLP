@@ -9,7 +9,7 @@
       ("/*" (arbno any) "*/") skip)
      (identifier
       (letter (arbno (or letter digit "_" "-" "?"))) symbol)
-     (string ( "$" letter (arbno (or letter digit whitespace)) "$" ) string)
+     (string ("$"  (arbno (not #\$) ) "$" ) string)
      (character ("'" any whitespace) string) 
      (boolean ( "#"(or "true" "false") ) string)
      (number
