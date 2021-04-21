@@ -56,6 +56,8 @@
     (expression ("filter" "(" expression expression ")" ) filter-exp)
     (expression ("maxVal" "(" expression ")" ) maxVal-exp) ;list or vector
     (expression ("minVal" "(" expression ")" ) minVal-exp) ;list or vector
+    (expression ("n-root" "(" number "," number ")" ) n-root-exp) ;nth-root first argument number base and second one root. 
+    (expression ("power-nth" "(" number "," number ")" ) power-exp) ;first argument number base and second one is the power.
     (expression ("prime?" "(" number ")" ) prime-exp)
     (expression ("odd?" "(" number ")" ) odd-exp) 
     (expression ("even?" "(" number ")" ) even-exp)
