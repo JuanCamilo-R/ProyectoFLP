@@ -47,7 +47,7 @@
     (expression (character) character-exp)
     (expression (string) string-exp)
     (expression (boolean) boolean-exp)
-    (expression ("allot" identifier "->" expression) allot-exp)  
+    (expression ("allot" identifier "<-" expression) allot-exp)  
     (expression ( "x8" "(" number (arbno "," number ) ")" ) octal-exp) 
     (expression ( "[" (separated-list expression ",") "]" ) list-exp)
     (expression ( "cons" "(" expression  expression ")" ) cons-exp)
@@ -58,8 +58,6 @@
     (expression ("minVal" "(" expression ")" ) minVal-exp) ;list or vector
     (expression ("n-root" "(" number "," number ")" ) n-root-exp) ;nth-root first argument number base and second one root. 
     (expression ("power-nth" "(" number "," number ")" ) power-exp) ;first argument number base and second one is the power.
-    (expression ("odd?" "(" number ")" ) odd-exp) 
-    (expression ("even?" "(" number ")" ) even-exp)
     (expression ( "insert-element" "(" number expression expression ")" ) insert-exp) ;list or vector
     (expression ("existsIn" "(" expression expression ")" ) exists-exp) ;list or vector : returns index if exists, -1 otherwise.
     (expression ("remove-element" "(" number expression ")" ) remove-exp) ;list or vector.
@@ -73,7 +71,7 @@
     (expr-bool (primitive-pred-record "(" expression ")" )  record-pred-bool-exp) ;record?
     (expr-bool (primitive-null "(" expression ")" ) null-pred-bool-exp ) ; null list?, null record?, null vector?  
     (expr-bool ("{" boolean "}") simple-bool-exp)
-    (expr-bool (oper-a-bool "(" expr-bool ")" ) oper-a-exp)
+    (expr-bool (oper-a-bool "(" expression ")" ) oper-a-exp)
     (expression ( "sequence" "(" expression (arbno ";" expression) ")") sequence-exp)
     (expression ( "if" "(" expr-bool ")" "then" "{" expression "}" "else"  "{" expression "}") if-exp)
     (expression ( "cond" (arbno "[" expr-bool "]" expression ) "else" expression ) cond-exp)
@@ -136,6 +134,8 @@
     (oper-bin-bool ("or") or-prim)
     (oper-bin-bool ("xor") xor-prim)
     (oper-a-bool ("not") not-prim)
+    (oper-a-bool ("even?") even-bol-prim)
+    (oper-a-bool ("odd?") odd-bol-prim)
     ;null-prim
     (primitive-null ("null?") pred-null-prim)
    )
