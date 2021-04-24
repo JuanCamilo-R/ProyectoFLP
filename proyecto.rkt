@@ -78,6 +78,7 @@
     (expression ( "if" "(" expr-bool ")" "then" "{" expression "}" "else"  "{" expression "}") if-exp)
     (expression ( "cond" (arbno "[" expr-bool "]" expression ) "else" expression ) cond-exp)
     (expression ( "for" "(" identifier "=" expression ";" decr-incre-exp expression ")" "{" expression "}") for-exp)
+    (expression ("while" "(" expr-bool ")" "do" expression "done") while-exp)
     (decr-incre-exp ("to") to-exp)
     (decr-incre-exp ("downto") downto-exp)
     ;numbers' or octals' expressions.
