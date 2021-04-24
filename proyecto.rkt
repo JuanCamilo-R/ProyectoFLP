@@ -58,15 +58,12 @@
     (expression ("minVal" "(" expression ")" ) minVal-exp) ;list or vector
     (expression ("n-root" "(" number "," number ")" ) n-root-exp) ;nth-root first argument number base and second one root. 
     (expression ("power-nth" "(" number "," number ")" ) power-exp) ;first argument number base and second one is the power.
-    (expression ("prime?" "(" number ")" ) prime-exp)
     (expression ("odd?" "(" number ")" ) odd-exp) 
     (expression ("even?" "(" number ")" ) even-exp)
-    (expression ( "quickSort" "(" pred-prim expression ")") quickSort-exp) ;list or vector
-    (expression ( "insert-element" "(" number expression ")" ) insert-exp) ;list or vector
+    (expression ( "insert-element" "(" number expression expression ")" ) insert-exp) ;list or vector
     (expression ("existsIn" "(" expression expression ")" ) exists-exp) ;list or vector : returns index if exists, -1 otherwise.
     (expression ("remove-element" "(" number expression ")" ) remove-exp) ;list or vector.
-    (expression ("relative-prime" "(" number number ")" ) relative-prime-exp) ;two numbers.  
-    (expression ( "vector" "[" (separated-list expression ";" ) "]" ) vector-exp)
+    (expression ( "vector" "[" (separated-list expression "," ) "]" ) vector-exp)
     (expression ("record" "{" identifier "=" expression  (arbno "," identifier "=" expression)  "}") record-exp)
     (expression (expr-bool) bool-exp)
     (expr-bool ( "compare"  pred-prim "(" expression "," expression ")") compare-bool-exp) ;(> expression expression)
@@ -90,15 +87,17 @@
     (expression (primitive-bin-string "(" expression "," expression ")") primapp-bin-string) ;concat  
     (expression (primitive-un-string "(" expression ")" ) primapp-un-string-exp) ;length
     ;lists' expressions.
-    (expression (primitive-un-list "("(separated-list expression ",") ")") primapp-un-list-exp) ; top, pop, null?
-    (expression (primitive-un-create-list "(" (separated-list expression "," ) ")") primapp-create-list) ;create-list
+    (expression (primitive-un-list "(" expression ")") primapp-un-list-exp) ; top, pop, null?
+    (expression (primitive-un-create-list "[" (separated-list expression "," ) "]") primapp-create-list) ;create-list
     (expression (primitive-bin-list "(" expression "," expression ")") primapp-bin-list-exp) ;append
     ;vectors' expressions.
-    (expression (primitive-bin-vector "(" number expression ")") primapp-un-vector) ;ref-vector, set-vector. 
+    (expression (primitive-bin-set-vector "(" number expression expression ")") primapp-bin-set-vector) ;set-vector
+    (expression (primitive-bin-ref-vector "(" number  expression ")") primapp-bin-ref-vector) ;ref-vector 
     (expression (primitive-create-vector "(" (separated-list expression ",") ")" ) primapp-create-vector) ;create vector.
 
     ;records' expressions.
-    (expression (primitive-bin-record "(" number expression ")" ) primapp-bin-record) ;set-record, ref-record.
+    (expression (primitive-bin-ref-record "(" number  expression ")" ) primapp-bin-ref-record) ;ref-record.
+    (expression (primitive-bin-set-record "(" number  expression expression ")" ) primapp-bin-set-record) ;set-record.
     (expression (primitive-un-create-record "{" identifier "=" expression (arbno "," identifier "=" expression) "}") primapp-create-record) 
     ;arimetic primitives are infixed. 
     (primitive ("+") add-prim)
@@ -117,15 +116,15 @@
     (primitive-bin-list ("append") append-list-prim)
     (primitive-un-create-list ("create-list") create-list-prim)
     ;vectors
-    (primitive-bin-vector ("ref-vector") ref-vector-prim)
-    (primitive-bin-vector ("set-vector") set-vector-prim)
+    (primitive-bin-ref-vector ("ref-vector") ref-vector-prim)
+    (primitive-bin-set-vector ("set-vector") set-vector-prim)
     (primitive-pred-vector ("vector?") pred-isvector-prim)
     (primitive-create-vector ("create-vector") create-vector-prim)
      ;records
     (primitive-pred-record ("record?") pred-isrecord-prim)
     (primitive-un-create-record ("create-record") record-create-prim)
-    (primitive-bin-record ("ref-record") ref-record-prim)
-    (primitive-bin-record ("set-record") set-record-prim)
+    (primitive-bin-ref-record ("ref-record") ref-record-prim)
+    (primitive-bin-set-record ("set-record") set-record-prim)
     ;logical expressions
     (pred-prim ("<") less-prim)
     (pred-prim (">") greater-prim)
