@@ -437,8 +437,8 @@
 0 0 24 29 1 #"\n"
 0 0 24 29 1 #"\n"
 0 0 24 29 1 #"\n"
-0 9        1051 21           0 0           0 174 0 17 3 33
-#";Invert a list by the plant eater"
+0 9        1045 21           0 0           0 173 0 17 3 33
+#";Invertir lista por el come hojas"
 0 0 24 29 1 #"\n"
 0 0 24 3 3 #"{} "
 0 0 14 3 9 #"endGlobal"
@@ -519,8 +519,7 @@
 0 0 24 3 3 #"())"
 0 0 24 29 1 #"\n"
 0 0 24 29 1 #"\n"
-0 0 17 3 24 #";Factorial list by Mr. R"
-0 0 17 3 7 #"andazzo"
+0 0 17 3 29 #";Lista de factoriales por m\303\255"
 0 0 24 29 1 #"\n"
 0 0 24 3 3 #"{} "
 0 0 14 3 9 #"endGlobal"
