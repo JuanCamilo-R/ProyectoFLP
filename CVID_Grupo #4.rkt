@@ -225,10 +225,7 @@
 -1 4 1 #"\0"
 0 71 1 #"\0"
 1.0 0 -1 -1 -1 -1 -1 -1 0 0 0 0 0 0 0 0 0 1.0 1.0 1.0 0 100 0 0 0 0 -1
--1 4 1 #"\0"
-0 -1 1 #"\0"
-1 0 -1 -1 -1 -1 -1 -1 0 0 0 0 0 0 1 1 1 1 1 1 0 0 0 0 0 0 -1 -1 0 1
-#"\0"
+-1 0 1 #"\0"
 0 75 12 #"Courier New\0"
 0.0 19 90 -1 90 -1 3 -1 0 1 0 1 0 0 0.0 0.0 0.0 0.0 0.0 0.0 0 0 0 255
 255 255 1 -1 2 1 #"\0"
@@ -249,7 +246,10 @@
 255 255 255 -1 -1 0 1 #"\0"
 0 -1 1 #"\0"
 1.0 0 -1 -1 -1 -1 -1 -1 0 0 0 0 0 1 0.0 0.0 0.0 0.0 0.0 0.0 34 139 34
-255 255 255 -1 -1 0 1 #"\0"
+255 255 255 -1 -1 4 1 #"\0"
+0 -1 1 #"\0"
+1.0 0 -1 -1 -1 -1 -1 -1 0 0 0 0 0 0 1.0 1.0 1.0 1.0 1.0 1.0 0 0 0 0 0 0
+-1 -1 0 1 #"\0"
 0 75 12 #"Courier New\0"
 0.0 12 90 -1 90 -1 3 -1 0 1 0 1 0 0 0.0 0.0 0.0 0.0 0.0 0.0 0 0 0 255
 255 255 1 -1 0 1 #"\0"
@@ -439,7 +439,7 @@
 255 255 -1 -1 0 1 #"\0"
 0 -1 1 #"\0"
 1.0 0 -1 -1 -1 -1 -1 -1 0 0 0 0 0 0 1.0 1.0 1.0 1.0 1.0 1.0 0 0 0 0 0 0
--1 -1           0 16911 0 28 3 10 #"#lang eopl"
+-1 -1           0 16883 0 28 3 10 #"#lang eopl"
 0 0 24 29 1 #"\n"
 0 9          37 21           0 0           0 5 0 17 3 44
 #";;Diego Fabi\303\241n Ledesma Motta   1928161-3743"
@@ -2851,7 +2851,7 @@
 0 0 14 3 15 #"type-of-program"
 0 0 24 3 1 #" "
 0 0 14 3 7 #"program"
-0 0 24 3 4 #")) ("
+0 0 24 3 6 #"))   ("
 0 0 14 3 12 #"eval-program"
 0 0 24 3 1 #" "
 0 0 14 3 7 #"program"
@@ -2965,8 +2965,7 @@
 0 0 19 3 3 #"can"
 0 0 19 3 1 #" "
 0 0 19 3 2 #"be"
-0 0 19 3 1 #" "
-0 0 19 3 30 #"no duplicate global variables\""
+0 0 19 3 31 #" no duplicate global variables\""
 0 0 24 3 1 #")"
 0 0 24 29 1 #"\n"
 0 0 24 3 27 #"                          ("
@@ -3645,8 +3644,7 @@
 0 0 19 3 1 #" "
 0 0 19 3 3 #"the"
 0 0 19 3 1 #" "
-0 0 19 3 4 #"true"
-0 0 19 3 7 #" value\""
+0 0 19 3 11 #"true value\""
 0 0 24 3 1 #" "
 0 0 14 3 8 #"bool-val"
 0 0 24 3 4 #"))))"
@@ -3748,8 +3746,7 @@
 0 0 24 3 2 #" ("
 0 0 14 3 4 #"eval"
 0 0 14 3 1 #"-"
-0 0 14 3 1 #"r"
-0 0 14 3 9 #"ight-side"
+0 0 14 3 10 #"right-side"
 0 0 24 3 1 #" "
 0 0 14 3 3 #"exp"
 0 0 24 3 1 #" "
@@ -3760,8 +3757,7 @@
 0 0 14 3 11 #"eval-symbol"
 0 0 24 3 2 #" ("
 0 0 14 3 4 #"eval"
-0 0 14 3 3 #"-al"
-0 0 14 3 10 #"lot-symbol"
+0 0 14 3 13 #"-allot-symbol"
 0 0 24 3 1 #" "
 0 0 14 3 6 #"id-exp"
 0 0 24 3 1 #" "
@@ -3773,14 +3769,12 @@
 0 0 24 3 2 #" ("
 0 0 14 3 3 #"set"
 0 0 14 3 1 #"R"
-0 0 14 3 1 #"e"
-0 0 14 3 1 #"f"
+0 0 14 3 2 #"ef"
 0 0 24 3 1 #" "
 0 0 14 3 3 #"eva"
 0 0 14 3 1 #"l"
 0 0 14 3 1 #"-"
-0 0 14 3 3 #"sym"
-0 0 14 3 3 #"bol"
+0 0 14 3 6 #"symbol"
 0 0 24 3 1 #" "
 0 0 14 3 9 #"new-value"
 0 0 24 3 3 #" ) "
@@ -3894,8 +3888,7 @@
 0 0 19 3 1 #" "
 0 0 19 3 5 #"octal"
 0 0 19 3 1 #" "
-0 0 19 3 6 #"number"
-0 0 19 3 4 #" ~s\""
+0 0 19 3 10 #"number ~s\""
 0 0 24 3 1 #" "
 0 0 14 3 9 #"u-numbers"
 0 0 24 3 4 #"))))"
@@ -3977,8 +3970,7 @@
 0 0 19 3 1 #" "
 0 0 19 3 5 #"octal"
 0 0 19 3 1 #" "
-0 0 19 3 6 #"number"
-0 0 19 3 4 #" ~s\""
+0 0 19 3 10 #"number ~s\""
 0 0 24 3 1 #" "
 0 0 14 3 9 #"u-numbers"
 0 0 24 3 4 #"))))"
@@ -4118,8 +4110,7 @@
 0 0 19 3 1 #" "
 0 0 19 3 3 #"not"
 0 0 19 3 1 #" "
-0 0 19 3 1 #"a"
-0 0 19 3 6 #" list\""
+0 0 19 3 7 #"a list\""
 0 0 24 3 1 #" "
 0 0 14 3 11 #"target-list"
 0 0 24 3 4 #"))))"
@@ -4181,8 +4172,7 @@
 0 0 19 3 1 #" "
 0 0 19 3 3 #"not"
 0 0 19 3 1 #" "
-0 0 19 3 1 #"a"
-0 0 19 3 6 #" list\""
+0 0 19 3 7 #"a list\""
 0 0 24 3 1 #" "
 0 0 14 3 11 #"target-list"
 0 0 24 3 4 #"))))"
@@ -4402,8 +4392,7 @@
 0 0 19 3 2 #"be"
 0 0 19 3 1 #" "
 0 0 19 3 2 #"an"
-0 0 19 3 1 #" "
-0 0 19 3 10 #"integer! \""
+0 0 19 3 11 #" integer! \""
 0 0 24 3 1 #" "
 0 0 14 3 14 #"int-number-exp"
 0 0 24 3 4 #"))))"
@@ -4476,8 +4465,7 @@
 0 0 19 3 2 #"be"
 0 0 19 3 1 #" "
 0 0 19 3 2 #"an"
-0 0 19 3 1 #" "
-0 0 19 3 10 #"integer! \""
+0 0 19 3 11 #" integer! \""
 0 0 24 3 1 #" "
 0 0 14 3 14 #"int-number-exp"
 0 0 24 3 4 #"))))"
@@ -4859,8 +4847,7 @@
 0 0 19 3 1 #" "
 0 0 19 3 6 #"should"
 0 0 19 3 1 #" "
-0 0 19 3 2 #"be"
-0 0 19 3 10 #" numbers!\""
+0 0 19 3 12 #"be numbers!\""
 0 0 24 3 5 #" ))))"
 0 0 24 29 1 #"\n"
 0 0 24 3 7 #"      ("
@@ -4920,8 +4907,7 @@
 0 0 19 3 1 #" "
 0 0 19 3 7 #"expects"
 0 0 19 3 1 #" "
-0 0 19 3 1 #"a"
-0 0 19 3 9 #" number!\""
+0 0 19 3 10 #"a number!\""
 0 0 24 3 4 #"))))"
 0 0 24 29 1 #"\n"
 0 0 24 3 7 #"      ("
@@ -4985,8 +4971,7 @@
 0 0 19 3 1 #" "
 0 0 19 3 4 #"must"
 0 0 19 3 1 #" "
-0 0 19 3 2 #"be"
-0 0 19 3 9 #" numbers\""
+0 0 19 3 11 #"be numbers\""
 0 0 24 3 1 #")"
 0 0 24 29 1 #"\n"
 0 0 24 3 27 #"                          ("
@@ -5014,8 +4999,7 @@
 0 0 19 3 1 #" "
 0 0 19 3 2 #"an"
 0 0 19 3 1 #" "
-0 0 19 3 7 #"integer"
-0 0 19 3 6 #" root\""
+0 0 19 3 13 #"integer root\""
 0 0 24 3 1 #")"
 0 0 24 29 1 #"\n"
 0 0 24 3 31 #"                              ("
@@ -5057,8 +5041,7 @@
 0 0 19 3 1 #"'"
 0 0 19 3 1 #"t"
 0 0 19 3 1 #" "
-0 0 19 3 2 #"be"
-0 0 19 3 10 #" computed\""
+0 0 19 3 12 #"be computed\""
 0 0 24 3 1 #")"
 0 0 24 29 1 #"\n"
 0 0 24 3 35 #"                                  ("
@@ -5212,8 +5195,7 @@
 0 0 19 3 1 #" "
 0 0 19 3 1 #"a"
 0 0 19 3 1 #" "
-0 0 19 3 4 #"list"
-0 0 19 3 12 #" structure!\""
+0 0 19 3 16 #"list structure!\""
 0 0 24 3 1 #" "
 0 0 14 3 4 #"exp1"
 0 0 24 3 5 #")))) "
@@ -5294,8 +5276,7 @@
 0 0 19 3 1 #" "
 0 0 19 3 2 #"be"
 0 0 19 3 1 #" "
-0 0 19 3 1 #"a"
-0 0 19 3 10 #" boolean!\""
+0 0 19 3 11 #"a boolean!\""
 0 0 24 3 3 #")))"
 0 0 24 29 1 #"\n"
 0 0 24 3 7 #"      ("
@@ -5321,8 +5302,7 @@
 0 0 19 3 5 #"valid"
 0 0 19 3 1 #" "
 0 0 19 3 10 #"expression"
-0 0 19 3 1 #" "
-0 0 19 3 5 #"~s: \""
+0 0 19 3 6 #" ~s: \""
 0 0 24 3 1 #" "
 0 0 14 3 3 #"exp"
 0 0 24 3 5 #")))))"
@@ -5565,8 +5545,7 @@
 0 0 14 3 13 #"check-for-poi"
 0 0 14 3 1 #"n"
 0 0 14 3 1 #"t"
-0 0 14 3 1 #"e"
-0 0 14 3 3 #"rs!"
+0 0 14 3 4 #"ers!"
 0 0 24 29 1 #"\n"
 0 0 24 3 3 #"  ("
 0 0 15 3 6 #"lambda"
@@ -5815,8 +5794,7 @@
 0 0 24 3 1 #"("
 0 0 15 3 6 #"define"
 0 0 24 3 1 #" "
-0 0 14 3 18 #"check-equal-type-a"
-0 0 14 3 5 #"llot!"
+0 0 14 3 23 #"check-equal-type-allot!"
 0 0 24 29 1 #"\n"
 0 0 24 3 3 #"  ("
 0 0 15 3 6 #"lambda"
@@ -5872,7 +5850,9 @@
 0 0 14 3 11 #"t-right-exp"
 0 0 24 3 1 #" "
 0 0 14 3 6 #"id-exp"
-0 0 24 3 3 #")))"
+0 0 24 3 1 #")"
+0 0 24 29 1 #"\n"
+0 0 24 3 35 #"                                 ))"
 0 0 24 29 1 #"\n"
 0 0 24 3 7 #"      ("
 0 0 14 3 8 #"ptr-type"
@@ -5888,51 +5868,55 @@
 0 0 14 3 10 #"treference"
 0 0 24 3 2 #") "
 0 0 21 3 2 #"#t"
+0 0 24 29 1 #"\n"
+0 0 24 3 34 #"                                 ("
+0 0 15 3 5 #"cases"
+0 0 24 3 1 #" "
+0 0 14 3 10 #"expression"
+0 0 24 3 1 #" "
+0 0 14 3 6 #"id-exp"
+0 0 24 29 1 #"\n"
+0 0 24 3 36 #"                                   ("
+0 0 14 3 15 #"pointer-var-exp"
+0 0 24 3 2 #" ("
+0 0 14 3 2 #"id"
+0 0 24 3 3 #") ("
+0 0 14 3 16 #"apply-tenv-allot"
+0 0 24 3 1 #" "
+0 0 14 3 2 #"id"
+0 0 24 3 1 #" "
+0 0 14 3 11 #"t-right-exp"
+0 0 24 3 1 #" "
+0 0 14 3 4 #"tenv"
+0 0 24 3 2 #"))"
+0 0 24 29 1 #"\n"
+0 0 24 3 36 #"                                   ("
+0 0 14 3 14 #"identifier-exp"
+0 0 24 3 2 #" ("
+0 0 14 3 2 #"id"
+0 0 24 3 3 #") ("
+0 0 14 3 16 #"apply-tenv-allot"
+0 0 24 3 1 #" "
+0 0 14 3 2 #"id"
+0 0 24 3 1 #" "
+0 0 14 3 11 #"t-right-exp"
+0 0 24 3 1 #" "
+0 0 14 3 4 #"tenv"
+0 0 24 3 2 #"))"
+0 0 24 29 1 #"\n"
+0 0 24 3 36 #"                                   ("
+0 0 14 3 4 #"else"
 0 0 24 3 2 #" ("
 0 0 14 3 10 #"eopl:error"
 0 0 24 3 1 #" "
 0 0 21 3 1 #"'"
-0 0 14 3 23 #"check-equal-type-allot!"
-0 0 24 29 1 #"\n"
-0 0 24 3 80
-(12
- #"                                                                     "
- #"           "
-) 0 0 19 3 1 #"\""
-0 0 19 3 3 #"The"
-0 0 19 3 1 #" "
-0 0 19 3 5 #"right"
-0 0 19 3 1 #" "
-0 0 19 3 4 #"type"
-0 0 19 3 1 #" "
-0 0 19 3 10 #"expression"
-0 0 19 3 1 #" "
-0 0 19 3 2 #"~s"
-0 0 19 3 1 #" "
-0 0 19 3 4 #"must"
-0 0 19 3 1 #" "
-0 0 19 3 5 #"match"
-0 0 19 3 1 #" "
-0 0 19 3 4 #"with"
-0 0 19 3 1 #" "
-0 0 19 3 3 #"the"
-0 0 19 3 1 #" "
-0 0 19 3 3 #"one"
-0 0 19 3 1 #" "
-0 0 19 3 6 #"stored"
-0 0 19 3 1 #" "
-0 0 19 3 2 #"at"
-0 0 19 3 1 #" "
-0 0 19 3 3 #"the"
-0 0 19 3 1 #" "
-0 0 19 3 7 #"pointer"
-0 0 19 3 3 #" ~s"
-0 0 19 3 1 #"\""
-0 0 24 29 1 #"\n"
-0 0 24 3 80 12 0 0 14 3 11 #"t-right-exp"
+0 0 14 3 6 #"id-exp"
 0 0 24 3 1 #" "
-0 0 14 3 10 #"treference"
-0 0 24 3 3 #")))"
+0 0 19 3 30 #"\"Cannot set the pointer symbol"
+0 0 19 3 9 #" from ~s\""
+0 0 24 3 1 #" "
+0 0 14 3 6 #"id-exp"
+0 0 24 3 5 #")))))"
 0 0 24 29 1 #"\n"
 0 0 24 3 7 #"      ("
 0 0 14 3 4 #"else"
@@ -6107,8 +6091,7 @@
 0 0 19 3 3 #"not"
 0 0 19 3 1 #" "
 0 0 19 3 1 #"a"
-0 0 19 3 5 #" char"
-0 0 19 3 1 #"\""
+0 0 19 3 6 #" char\""
 0 0 24 3 2 #" ("
 0 0 14 3 12 #"returnSymbol"
 0 0 24 3 1 #" "
@@ -6386,8 +6369,7 @@
 0 0 19 3 3 #"not"
 0 0 19 3 1 #" "
 0 0 19 3 1 #"a"
-0 0 19 3 9 #" function"
-0 0 19 3 1 #"\""
+0 0 19 3 10 #" function\""
 0 0 24 3 1 #" "
 0 0 14 3 5 #"tfunc"
 0 0 24 3 1 #" "
@@ -6417,7 +6399,8 @@
 0 0 24 3 2 #" ("
 0 0 14 3 1 #"x"
 0 0 24 3 3 #") ("
-0 0 14 3 20 #"type-of-expression-p"
+0 0 14 3 8 #"type-of-"
+0 0 14 3 12 #"expression-p"
 0 0 24 3 1 #" "
 0 0 14 3 1 #"x"
 0 0 24 3 1 #" "
@@ -6429,7 +6412,8 @@
 0 0 24 3 23 #"                      ("
 0 0 14 3 5 #"targs"
 0 0 24 3 2 #" ("
-0 0 14 3 23 #"expand-type-expressions"
+0 0 14 3 6 #"expand"
+0 0 14 3 17 #"-type-expressions"
 0 0 24 3 1 #" "
 0 0 14 3 5 #"texps"
 0 0 24 3 2 #"))"
@@ -6480,8 +6464,7 @@
 0 0 14 3 8 #"for-each"
 0 0 24 29 1 #"\n"
 0 0 24 3 25 #"                         "
-0 0 14 3 3 #"che"
-0 0 14 3 16 #"ck-for-pointers!"
+0 0 14 3 19 #"check-for-pointers!"
 0 0 24 29 1 #"\n"
 0 0 24 3 25 #"                         "
 0 0 14 3 4 #"vals"
@@ -6590,7 +6573,8 @@
 0 0 24 3 3 #" (("
 0 0 14 3 3 #"tid"
 0 0 24 3 2 #" ("
-0 0 14 3 18 #"type-of-expression"
+0 0 14 3 14 #"type-of-expres"
+0 0 14 3 4 #"sion"
 0 0 24 3 1 #" "
 0 0 14 3 6 #"id-exp"
 0 0 24 3 1 #" "
@@ -6611,7 +6595,11 @@
 0 0 15 3 5 #"begin"
 0 0 24 29 1 #"\n"
 0 0 24 3 22 #"                     ("
-0 0 14 3 23 #"check-equal-type-allot!"
+0 0 14 3 10 #"check-equa"
+0 0 14 3 7 #"l-type-"
+0 0 14 3 1 #"a"
+0 0 14 3 2 #"ll"
+0 0 14 3 3 #"ot!"
 0 0 24 3 1 #" "
 0 0 14 3 3 #"tid"
 0 0 24 3 1 #" "
@@ -6711,8 +6699,7 @@
 0 0 19 3 6 #"return"
 0 0 19 3 1 #" "
 0 0 19 3 3 #"the"
-0 0 19 3 5 #" same"
-0 0 19 3 1 #"\""
+0 0 19 3 6 #" same\""
 0 0 24 3 1 #" "
 0 0 14 3 8 #"true-exp"
 0 0 24 3 1 #" "
@@ -6735,8 +6722,7 @@
 0 0 19 3 4 #"must"
 0 0 19 3 1 #" "
 0 0 19 3 2 #"be"
-0 0 19 3 8 #" boolean"
-0 0 19 3 1 #"\""
+0 0 19 3 9 #" boolean\""
 0 0 24 3 1 #" "
 0 0 14 3 9 #"test-bool"
 0 0 24 3 2 #"))"
@@ -6964,8 +6950,7 @@
 0 0 19 3 6 #"return"
 0 0 19 3 1 #" "
 0 0 19 3 3 #"the"
-0 0 19 3 5 #" same"
-0 0 19 3 1 #"\""
+0 0 19 3 6 #" same\""
 0 0 24 3 1 #" "
 0 0 14 3 8 #"true-exp"
 0 0 24 3 1 #" "
@@ -6988,8 +6973,7 @@
 0 0 19 3 4 #"must"
 0 0 19 3 1 #" "
 0 0 19 3 2 #"be"
-0 0 19 3 8 #" boolean"
-0 0 19 3 1 #"\""
+0 0 19 3 9 #" boolean\""
 0 0 24 3 1 #" "
 0 0 14 3 8 #"test-exp"
 0 0 24 3 7 #")))))))"
@@ -7107,8 +7091,7 @@
 0 0 19 3 3 #"Not"
 0 0 19 3 1 #" "
 0 0 19 3 8 #"possible"
-0 0 19 3 3 #" ~s"
-0 0 19 3 1 #"\""
+0 0 19 3 4 #" ~s\""
 0 0 24 3 1 #" "
 0 0 14 3 4 #"tenv"
 0 0 24 3 2 #"))"
@@ -7179,8 +7162,7 @@
 0 0 19 3 5 #"match"
 0 0 19 3 1 #" "
 0 0 19 3 4 #"call"
-0 0 19 3 3 #" ~s"
-0 0 19 3 1 #"\""
+0 0 19 3 4 #" ~s\""
 0 0 24 3 1 #" "
 0 0 14 3 9 #"func-name"
 0 0 24 3 3 #")))"
@@ -7548,8 +7530,7 @@
 0 0 19 3 3 #"not"
 0 0 19 3 1 #" "
 0 0 19 3 8 #"possible"
-0 0 19 3 3 #" ~s"
-0 0 19 3 1 #"\""
+0 0 19 3 4 #" ~s\""
 0 0 24 3 1 #" "
 0 0 14 3 4 #"texp"
 0 0 24 3 5 #")))))"
@@ -7632,7 +7613,8 @@
 0 0 24 3 7 #"      ("
 0 0 14 3 15 #"vector-type-exp"
 0 0 24 3 4 #" () "
-0 0 14 3 11 #"vector-type"
+0 0 14 3 9 #"vector-ty"
+0 0 14 3 2 #"pe"
 0 0 24 3 1 #")"
 0 0 24 29 1 #"\n"
 0 0 24 3 7 #"      ("
@@ -7670,7 +7652,8 @@
 0 0 24 3 7 #"      ("
 0 0 14 3 12 #"ptr-type-exp"
 0 0 24 3 4 #" () "
-0 0 14 3 12 #"ptr-type-arg"
+0 0 14 3 9 #"ptr-type-"
+0 0 14 3 3 #"arg"
 0 0 24 3 4 #"))))"
 0 0 24 29 1 #"\n"
 0 0 24 29 1 #"\n"
@@ -7889,7 +7872,7 @@
 0 0 24 29 1 #"\n"
 0 0 24 29 1 #"\n"
 0 0 17 3 119
-(13
+(12
  #";**********************************************************types from"
  #" primitives***************************************"
 ) 0 0 24 29 1 #"\n"
@@ -8153,8 +8136,7 @@
 0 0 19 3 5 #"valid"
 0 0 19 3 1 #" "
 0 0 19 3 4 #"prim"
-0 0 19 3 1 #" "
-0 0 19 3 3 #"~s\""
+0 0 19 3 4 #" ~s\""
 0 0 24 3 1 #" "
 0 0 14 3 4 #"prim"
 0 0 24 3 5 #")))))"
@@ -8162,7 +8144,7 @@
 0 0 24 29 1 #"\n"
 0 0 24 29 1 #"\n"
 0 0 17 3 127
-(14
+(13
  #";*************************************************************target "
  #"datatype**************************************************"
 ) 0 0 24 29 1 #"\n"
@@ -8200,7 +8182,7 @@
 #";Purpose: To check whether the given value is a valid expval."
 0 0 24 29 1 #"\n"
 0 0 17 3 91
-(15
+(14
  #";This is because we need to check if the value can be saved in a prod"
  #"uction of the targets."
 ) 0           0 0 0 24 29 1 #"\n"
@@ -8259,7 +8241,7 @@
 #";Contract: expr-else expression * environment -> scheme value"
 0 0 24 29 1 #"\n"
 0 0 17 3 78
-(16
+(15
  #";Purpose: To eval different kinds of else expressions whether else or"
  #" else-if,"
 ) 0 0 24 29 1 #"\n"
@@ -8625,14 +8607,14 @@
 0 0 24 3 4 #"))))"
 0 0 24 29 1 #"\n"
 0 0 17 3 72
-(17
+(16
  #";*************************all eval-expression aux********************"
  #"***"
 ) 0 0 24 29 1 #"\n"
 0 9          37 21           0 0           0 5 0 17 3 11 #";eval-rands"
 0 0 24 29 1 #"\n"
 0 0 17 3 77
-(18
+(17
  #";Contract: list of C-VID expressions * environment -> vector of schem"
  #"e values"
 ) 0 0 24 29 1 #"\n"
@@ -8674,14 +8656,14 @@
 #";eval-unic-const-rands"
 0 0 24 29 1 #"\n"
 0 0 17 3 89
-(19
+(18
  #";Contract: list of C-VID expressions * environment -> vector of schem"
  #"e values or closures"
 ) 0 0 24 29 1 #"\n"
 0 0 17 3 41 #";Purpose: eval rands for unic expression."
 0 0 24 29 1 #"\n"
 0 0 17 3 93
-(20
+(19
  #";Commentary: It was separated from the rest because unic variables an"
  #"d const variables cannot"
 ) 0 0 24 29 1 #"\n"
@@ -8728,7 +8710,7 @@
 #";eval-unic-const-rand"
 0 0 24 29 1 #"\n"
 0 0 17 3 89
-(21
+(20
  #";Contract: C-VID expression * environment -> direct-target of a schem"
  #"e value or a closure"
 ) 0 0 24 29 1 #"\n"
@@ -8762,7 +8744,7 @@
 0 9          49 21           0 0           0 7 0 17 3 10 #";eval-rand"
 0 0 24 29 1 #"\n"
 0 0 17 3 99
-(22
+(21
  #";Contract: C-VID expression * environment -> a production of target o"
  #"f a scheme value or a closure."
 ) 0 0 24 29 1 #"\n"
@@ -8770,7 +8752,7 @@
 #";Purpose: To storage a C-VID expression within a target production"
 0 0 24 29 1 #"\n"
 0 0 17 3 106
-(23
+(22
  #";Commentary: This one does include references and pointers because it"
  #"'s called from a var, rec expressions"
 ) 0           0 0 0 24 29 1 #"\n"
@@ -8946,12 +8928,12 @@
 #";eval-right-side"
 0 0 24 29 1 #"\n"
 0 0 17 3 102
-(24
+(23
  #";Contract: C-VID expression * environment -> scheme value or a scheme"
  #" value within an indirect target."
 ) 0 0 24 29 1 #"\n"
 0 0 17 3 96
-(25
+(24
  #";Purpose: Evaluate the right hand side of the allot expression to sen"
  #"d it to the setRef function"
 ) 0           0 0 0 24 29 1 #"\n"
@@ -9013,8 +8995,7 @@
 0 0 24 3 1 #" "
 0 0 14 3 6 #"target"
 0 0 24 3 2 #" ("
-0 0 14 3 2 #"de"
-0 0 14 3 7 #"ref-aux"
+0 0 14 3 9 #"deref-aux"
 0 0 24 3 1 #" "
 0 0 14 3 3 #"ref"
 0 0 24 3 1 #")"
@@ -9076,8 +9057,7 @@
 0 0 19 3 1 #"\""
 0 0 19 3 2 #"In"
 0 0 19 3 1 #" "
-0 0 19 3 5 #"order"
-0 0 19 3 50 #" to use * the identifier must be a reference ~s: \""
+0 0 19 3 55 #"order to use * the identifier must be a reference ~s: \""
 0 0 24 3 1 #" "
 0 0 14 3 3 #"ref"
 0 0 24 3 2 #"))"
@@ -9139,7 +9119,7 @@
 0 0 17 3 56 #";Contract: C-VID symbol * environment -> C-VID reference"
 0 0 24 29 1 #"\n"
 0 0 17 3 79
-(26
+(25
  #";Purpose: Identifies whether the C-VID symbol given within the allot "
  #"expression"
 ) 0 0 24 29 1 #"\n"
@@ -9147,35 +9127,35 @@
 #";is a C-VID reference, C-VID pointer or just a C-VID variable."
 0 0 24 29 1 #"\n"
 0 0 17 3 81
-(27
+(26
  #";Provided a C-VID variable (identifier-exp), it'll just return the it"
  #"s reference."
 ) 0 0 24 29 1 #"\n"
 0 0 17 3 110
-(28
+(27
  #";Provided a C-VID reference (ref-var-exp), it'll check whether the re"
  #"ference points to an indirect-target that"
 ) 0 0 24 29 1 #"\n"
 0 0 17 3 98
-(29
+(28
  #";at the same time points to a direct-target, if so it returns the the"
  #" indirect-target's reference."
 ) 0 0 24 29 1 #"\n"
 0 0 17 3 84
-(30
+(29
  #";Provided a C-VID pointer (pointer-var-exp), it'll check whether the "
  #"pointer goes to"
 ) 0 0 24 29 1 #"\n"
 0 0 24 3 2 #"  "
 0 0 17 3 94
-(31
+(30
  #";a indirect-target. If true it returns the pointed reference, otherwi"
  #"se it will show an error."
 ) 0 0 24 29 1 #"\n"
 0 0 17 3 10 #";Comments:"
 0 0 24 29 1 #"\n"
 0 0 17 3 111
-(32
+(31
  #";Note that allot &z <- 0 and allot z <- 0 both do the same when z poi"
  #"nts to a reference of some other variable."
 ) 0 0 24 29 1 #"\n"
@@ -9186,8 +9166,7 @@
 0 0 15 3 6 #"define"
 0 0 24 3 1 #" "
 0 0 14 3 12 #"eval-allot-s"
-0 0 14 3 1 #"y"
-0 0 14 3 4 #"mbol"
+0 0 14 3 5 #"ymbol"
 0 0 24 29 1 #"\n"
 0 0 24 3 3 #"  ("
 0 0 15 3 6 #"lambda"
@@ -9214,8 +9193,7 @@
 0 0 24 3 31 #"                               "
 0 0 14 3 6 #"target"
 0 0 24 3 2 #" ("
-0 0 14 3 8 #"deref-au"
-0 0 14 3 1 #"x"
+0 0 14 3 9 #"deref-aux"
 0 0 24 3 2 #" ("
 0 0 14 3 13 #"apply-env-ref"
 0 0 24 3 1 #" "
@@ -9231,8 +9209,7 @@
 0 0 24 3 1 #")"
 0 0 24 29 1 #"\n"
 0 0 24 3 47 #"                                              ("
-0 0 14 3 2 #"ap"
-0 0 14 3 11 #"ply-env-ref"
+0 0 14 3 13 #"apply-env-ref"
 0 0 24 3 1 #" "
 0 0 14 3 2 #"id"
 0 0 24 3 1 #" "
@@ -9447,7 +9424,7 @@
 0 9          73 21           0 0           0 11 0 17 3 10 #";eval-cond"
 0 0 24 29 1 #"\n"
 0 0 17 3 99
-(33
+(32
  #";Contract: list of evaluated conditionals * list of the conditionals'"
  #" results (not evaluated yet) *"
 ) 0 0 24 29 1 #"\n"
@@ -9455,12 +9432,12 @@
 #";else expression (not evaluated yet)-> Call to eval-cond-aux"
 0 0 24 29 1 #"\n"
 0 0 17 3 71
-(34
+(33
  #";Purpose: Check if all the given conditionals are valid boolean value"
  #"s."
 ) 0 0 24 29 1 #"\n"
 0 0 17 3 76
-(35
+(34
  #";If so, calls the eval-cond-aux to look foward to evaluating the cond"
  #"itions."
 ) 0 0 24 29 1 #"\n"
@@ -9516,16 +9493,16 @@
 0 9          61 21           0 0           0 9 0 17 3 14
 #";eval-cond-aux"
 0 0 24 29 1 #"\n"
-0 0 17 3 99 33 0 0 24 29 1 #"\n"
+0 0 17 3 99 32 0 0 24 29 1 #"\n"
 0 0 17 3 52 #";else expression (not evaluated yet)-> Scheme value."
 0 0 24 29 1 #"\n"
 0 0 17 3 99
-(36
+(35
  #";Purpose: Loop through the list of conditionals and returns the evalu"
  #"ated matched result expression"
 ) 0 0 24 29 1 #"\n"
 0 0 17 3 88
-(37
+(36
  #";to the first true condition. If none of them are, return the evaluat"
  #"ed else expression "
 ) 0           0 0 0 24 29 1 #"\n"
@@ -9598,12 +9575,12 @@
 #";eval-sequence"
 0 0 24 29 1 #"\n"
 0 0 17 3 97
-(38
+(37
  #";Contract:  list of C-VID expressions * environment -> the last C-VID"
  #" expression of the sequence."
 ) 0 0 24 29 1 #"\n"
 0 0 17 3 111
-(39
+(38
  #";Porpose: Loop through the list of C-VID expressions and evaluate the"
  #"m until it's done and return the last one."
 ) 0           0 0 0 24 29 1 #"\n"
@@ -9665,7 +9642,7 @@
 0 0 17 3 51 #";Contract: counter-exp (C-VID expression) -> string"
 0 0 24 29 1 #"\n"
 0 0 17 3 80
-(40
+(39
  #";Purpose: Help define what for sentence's flow will be. (Adding or su"
  #"bstracting)"
 ) 0           0 0 0 24 29 1 #"\n"
@@ -9704,14 +9681,14 @@
 0 9          49 21           0 0           0 7 0 17 3 9 #";eval-for"
 0 0 24 29 1 #"\n"
 0 0 17 3 116
-(41
+(40
  #";Contract: C-VID identifier * C-VID expression (number) * C-VID expre"
  #"ssion (number) * C-VID expression * environment"
 ) 0 0 24 29 1 #"\n"
 0 0 17 3 24 #";-> call to eval-for-exp"
 0 0 24 29 1 #"\n"
 0 0 17 3 103
-(42
+(41
  #";Purpose: Check whether the second and third argument are numbers and"
  #" check which flow (add or sub) is."
 ) 0           0 0 0 24 29 1 #"\n"
@@ -9847,24 +9824,24 @@
 #";eval-for-exp"
 0 0 24 29 1 #"\n"
 0 0 17 3 100
-(43
+(42
  #";Contract: C-VID identifier * C-VID expression (number) * proc (+ or "
  #"-)* C-VID expression (number) *"
 ) 0 0 24 29 1 #"\n"
 0 0 17 3 78
-(44
+(43
  #";C-VID expression * acumulator (number set to 0) * environment -> Sch"
  #"eme value"
 ) 0 0 24 29 1 #"\n"
 0 0 17 3 55 #";Purpose: Loop through the body-for end-for-flow times."
 0 0 24 29 1 #"\n"
 0 0 17 3 94
-(45
+(44
  #";Comments: The reason why the first-env has its own variable is becau"
  #"se the counter is changed"
 ) 0 0 24 29 1 #"\n"
 0 0 17 3 111
-(46
+(45
  #";at the begining of the call. Had it not been that way, it would have"
  #" omitted the initial value of the id-exp. "
 ) 0           0 0 0 24 29 1 #"\n"
@@ -10037,7 +10014,7 @@
 0 9          49 21           0 0           0 7 0 17 3 12 #";eval-loopIn"
 0 0 24 29 1 #"\n"
 0 0 17 3 86
-(47
+(46
  #";Contract: C-VID identifier * C-VID expression (list) * C-VID express"
  #"ion * environment"
 ) 0 0 24 29 1 #"\n"
@@ -10140,7 +10117,7 @@
 0 0 17 3 16 #";-> Scheme value"
 0 0 24 29 1 #"\n"
 0 0 17 3 82
-(48
+(47
  #";Purpose: Apply the body-exp expression as long as the bool-exp condi"
  #"tion is true."
 ) 0           0 0 0 24 29 1 #"\n"
@@ -10217,12 +10194,12 @@
 0 0 24 3 5 #")))))"
 0 0 24 29 1 #"\n"
 0 0 17 3 114
-(49
+(48
  #";******************************************print*********************"
  #"*********************************************"
 ) 0 0 24 29 1 #"\n"
 0 0 17 3 126
-(50
+(49
  #";eval rands print: it was separated from the other one above since th"
  #"ese expressions are just for printing out in the console."
 ) 0 0 24 29 1 #"\n"
@@ -10333,7 +10310,7 @@
 0 0 17 3 52 #";Contract: list of Scheme characters -> Scheme value"
 0 0 24 29 1 #"\n"
 0 0 17 3 71
-(51
+(50
  #";Purpose: Print to console the string received as a list of character"
  #"s."
 ) 0           0 0 0 24 29 1 #"\n"
@@ -10498,7 +10475,7 @@
 #";Contract: list of C-VID expressions * environment -> Scheme value"
 0 0 24 29 1 #"\n"
 0 0 17 3 75
-(52
+(51
  #";Purpose: Print a list of C-VID expressions, each expression in a new"
  #" line."
 ) 0           0 0 0 24 29 1 #"\n"
@@ -10665,7 +10642,7 @@
 0 0 17 3 57 #";Contract: C-VID expression * environment -> Scheme value"
 0 0 24 29 1 #"\n"
 0 0 17 3 94
-(53
+(52
  #";Purpose: Print a list of C-VID expressions with a specific format fo"
  #"r octal-exp and list-exp."
 ) 0           0 0 0 24 29 1 #"\n"
@@ -10749,7 +10726,7 @@
 0 0 24 29 1 #"\n"
 0 0 24 29 1 #"\n"
 0 0 17 3 107
-(54
+(53
  #";*********************************************************targets****"
  #"**************************************"
 ) 0 0 24 29 1 #"\n"
@@ -10827,7 +10804,7 @@
 0 0 24 29 1 #"\n"
 0 0 24 29 1 #"\n"
 0 0 17 3 109
-(55
+(54
  #";****************************************Environments****************"
  #"****************************************"
 ) 0 0 24 29 1 #"\n"
@@ -10984,7 +10961,7 @@
 0 0 17 3 48 #";Contract: identifier * environment -> reference"
 0 0 24 29 1 #"\n"
 0 0 17 3 94
-(56
+(55
  #";Purpose: Returns a reference datatype (a position and the vector whe"
  #"re the sought id remains)"
 ) 0           0 0 0 24 29 1 #"\n"
@@ -11138,8 +11115,7 @@
 0 0 24 3 1 #")"
 0 0 24 29 1 #"\n"
 0 0 24 3 26 #"                         ("
-0 0 14 3 5 #"apply"
-0 0 14 3 17 #"-env-ref-aux-unic"
+0 0 14 3 22 #"apply-env-ref-aux-unic"
 0 0 24 3 1 #" "
 0 0 14 3 3 #"sym"
 0 0 24 3 1 #" "
@@ -11171,7 +11147,7 @@
 0 0 17 3 51 #";Contract: identifier * environment -> Scheme value"
 0 0 24 29 1 #"\n"
 0 0 17 3 84
-(57
+(56
  #";Purpose: gets the value of the sought id from apply-env-ref by using"
  #" deref function"
 ) 0           0 0 0 24 29 1 #"\n"
@@ -11208,7 +11184,7 @@
 #";apply-env-ref-aux"
 0 0 24 29 1 #"\n"
 0 0 17 3 91
-(58
+(57
  #";Contract: identifier * boolean * list of identifiers * list of Schem"
  #"e values * environment"
 ) 0 0 24 29 1 #"\n"
@@ -11286,7 +11262,7 @@
 #";apply-env-ref-aux-unic"
 0 0 24 29 1 #"\n"
 0 0 17 3 81
-(59
+(58
  #";Contract: identifier * list of identifiers * list of Scheme values *"
  #" environment"
 ) 0 0 24 29 1 #"\n"
@@ -11296,7 +11272,7 @@
 #";Purpose: Finds the value of the wanted id in an extended-unic-env."
 0 0 24 29 1 #"\n"
 0 0 17 3 120
-(60
+(59
  #";Commentary: It was separated from the general aux since unic can be "
  #"either ballotable or not, depending on the context."
 ) 0           0 0 0 24 29 1 #"\n"
@@ -11362,8 +11338,7 @@
 0 0 24 3 1 #" "
 0 0 19 3 10 #"\"STAND_BY\""
 0 0 24 3 3 #") ("
-0 0 14 3 4 #"a-re"
-0 0 14 3 1 #"f"
+0 0 14 3 5 #"a-ref"
 0 0 24 3 1 #" "
 0 0 14 3 3 #"pos"
 0 0 24 3 1 #" "
@@ -11412,7 +11387,7 @@
 0 0 24 29 1 #"\n"
 0 0 24 29 1 #"\n"
 0 0 17 3 119
-(61
+(60
  #";******************************************types' environments*******"
  #"**************************************************"
 ) 0 0 24 29 1 #"\n"
@@ -11623,7 +11598,7 @@
 #";Contract: identifier * list of identifiers -> number or boolean"
 0 0 24 29 1 #"\n"
 0 0 17 3 71
-(62
+(61
  #";Purpose: Finds the pos if the id remains on the given list of symbol"
  #"s."
 ) 0           0 0 0 24 29 1 #"\n"
@@ -11729,12 +11704,12 @@
 #";Contract: List of identifiers * list of identifiers -> environment"
 0 0 24 29 1 #"\n"
 0 0 17 3 92
-(63
+(62
  #";Purpose: Its purpose  is to return a recursive environment where all"
  #" the closures it builds"
 ) 0 0 24 29 1 #"\n"
 0 0 17 3 77
-(64
+(63
  #";have inside the same environment where the closures where initially "
  #"created."
 ) 0           0 0 0 24 29 1 #"\n"
@@ -11892,7 +11867,7 @@
 0 0 24 29 1 #"\n"
 0 0 24 29 1 #"\n"
 0 0 17 3 125
-(65
+(64
  #";**********************************************************Procedures"
  #"********************************************************"
 ) 0 0 24 29 1 #"\n"
@@ -11935,12 +11910,12 @@
 #";eval-function-rands"
 0 0 24 29 1 #"\n"
 0 0 17 3 82
-(66
+(65
  #";Contract: C-VID expression * environment -> vector of scheme values "
  #"or a closure."
 ) 0 0 24 29 1 #"\n"
 0 0 17 3 71
-(67
+(66
  #";Purpose: To successfully evaluate all the rands passed through a cal"
  #"l."
 ) 0           0 0 0 24 29 1 #"\n"
@@ -11980,7 +11955,7 @@
 #";eval-function-rand"
 0 0 24 29 1 #"\n"
 0 0 17 3 73
-(68
+(67
  #";Contract: C-VID expression * environment -> a target datatype proced"
  #"ure."
 ) 0 0 24 29 1 #"\n"
@@ -11988,29 +11963,29 @@
 #";Purpose: Evaluate the given argument from a closure call."
 0 0 24 29 1 #"\n"
 0 0 17 3 87
-(69
+(68
  #";The argument can be given in three different ways: references, ident"
  #"ifiers (variables)"
 ) 0 0 24 29 1 #"\n"
 0 0 17 3 82
-(70
+(69
  #";or just a plain C-VID expression. This function helps manipulate tho"
  #"se arguments."
 ) 0 0 24 29 1 #"\n"
 0 0 17 3 90
-(71
+(70
  #";If it gets to be a ref-var-exp, the function returns an indirect-tar"
  #"get with a reference."
 ) 0 0 24 29 1 #"\n"
 0 0 24 3 1 #" "
 0 0 17 3 89
-(72
+(71
  #";If the id points to a direct target itself, it will return the refer"
  #"ence of the same id."
 ) 0 0 24 29 1 #"\n"
 0 0 24 3 1 #" "
 0 0 17 3 95
-(73
+(72
  #";On the other hand, if the id points to a indirect-target, it will re"
  #"turn the indirect-target's"
 ) 0 0 24 29 1 #"\n"
@@ -12018,18 +11993,18 @@
 0 0 17 3 11 #";reference."
 0 0 24 29 1 #"\n"
 0 0 17 3 95
-(74
+(73
  #";If it gets to be an identifier-exp, the function returns a direct-ta"
  #"rget if the id points to a"
 ) 0 0 24 29 1 #"\n"
 0 0 24 3 1 #" "
 0 0 17 3 89
-(75
+(74
  #";direct target or returns an indirect-target if the id points to anot"
  #"her indirect-target."
 ) 0 0 24 29 1 #"\n"
 0 0 17 3 76
-(76
+(75
  #";Otherwise, it will just return a direct-target with the argument eva"
  #"luated."
 ) 0           0 0 0 24 29 1 #"\n"
@@ -12301,14 +12276,14 @@
 0 0 24 3 3 #"  )"
 0 0 24 29 1 #"\n"
 0 0 17 3 100
-(77
+(76
  #";**********************************************aux functions*********"
  #"*******************************"
 ) 0 0 24 29 1 #"\n"
 0 9          37 21           0 0           0 5 0 17 3 11 #";minMax-aux"
 0 0 24 29 1 #"\n"
 0 0 17 3 74
-(78
+(77
  #";Contract: prim (> or <) * expression * expression * environment -> n"
  #"umber"
 ) 0 0 24 29 1 #"\n"
@@ -12399,17 +12374,17 @@
 #";generic-eval-rands"
 0 0 24 29 1 #"\n"
 0 0 17 3 70
-(79
+(78
  #";Contract: list of expressions * environment -> list of scheme values"
  #"."
 ) 0 0 24 29 1 #"\n"
 0 0 17 3 85
-(80
+(79
  #";Purpose: This function evaluates a given list of expressions on a gi"
  #"ven environment,"
 ) 0 0 24 29 1 #"\n"
 0 0 17 3 83
-(81
+(80
  #";it was made to reduce lines of code since this function repeats itse"
  #"lf quite often"
 ) 0           0 0 0 24 29 1 #"\n"
@@ -12481,7 +12456,7 @@
 0 0 17 3 41 #";Contract: list of identifiers -> boolean"
 0 0 24 29 1 #"\n"
 0 0 17 3 72
-(82
+(81
  #";Purpose: To make sure there is no duplicate variable within a var sc"
  #"ope"
 ) 0 0 24 29 1 #"\n"
@@ -12658,7 +12633,7 @@
 #";Contract: list of scheme values or a procval expression -> boolean"
 0 0 24 29 1 #"\n"
 0 0 17 3 74
-(83
+(82
  #";Purpose: this function checks if there is a none-exp within the arg "
  #"lists"
 ) 0 0 24 29 1 #"\n"
@@ -12722,7 +12697,7 @@
 0 0 17 3 45 #";Purpose: Check if the given argument is true"
 0 0 24 29 1 #"\n"
 0 0 17 3 78
-(84
+(83
  #";Comments: It was used in all functions that manipulate control expre"
  #"ssions.  "
 ) 0           0 0 0 24 29 1 #"\n"
@@ -12764,7 +12739,7 @@
 0 9          37 21           0 0           0 5 0 17 3 6 #";print"
 0 0 24 29 1 #"\n"
 0 0 17 3 69
-(85
+(84
  #";Contract: List of scheme values or procval expression -> null string"
 ) 0 0 24 29 1 #"\n"
 0 0 17 3 51 #";Purpose: Print all the values from the given list."
@@ -12820,7 +12795,7 @@
 0 0 17 3 43 #";Contract: List of scheme values -> boolean"
 0 0 24 29 1 #"\n"
 0 0 17 3 80
-(86
+(85
  #";Purpose: Check if the given list is a valid representation of a posi"
  #"tive octal."
 ) 0           0 0 0 24 29 1 #"\n"
@@ -12900,12 +12875,12 @@
 0 0 17 3 43 #";Contract: List of scheme values -> boolean"
 0 0 24 29 1 #"\n"
 0 0 17 3 80
-(87
+(86
  #";Purpose: Check if the given list is a valid representation of a nega"
  #"tive octal."
 ) 0 0 24 29 1 #"\n"
 0 0 17 3 92
-(88
+(87
  #";comments: Negative octals are represented by putting a \"-\" in the "
  #"las position of the list,"
 ) 0 0 24 29 1 #"\n"
@@ -13245,7 +13220,7 @@
 #";Contract: List of scheme values or a procval expression -> boolean"
 0 0 24 29 1 #"\n"
 0 0 17 3 89
-(89
+(88
  #";Purpose: This function makes sure that constants cannot be declared "
  #"with STAND_BY value "
 ) 0           0 0 0 24 29 1 #"\n"
@@ -13298,7 +13273,7 @@
 0 0 24 29 1 #"\n"
 0 0 24 29 1 #"\n"
 0 0 17 3 127
-(90
+(89
  #";********************************************************References**"
  #"**********************************************************"
 ) 0 0 24 29 1 #"\n"
@@ -13414,7 +13389,7 @@
 0 0 17 3 30 #";Contract: reference -> target"
 0 0 24 29 1 #"\n"
 0 0 17 3 77
-(91
+(90
  #";Purpose: To return the value of a reference, even if it's another re"
  #"ference."
 ) 0           0 0 0 24 29 1 #"\n"
@@ -13609,12 +13584,12 @@
 0 0 17 3 44 #";Contract: reference * direct-target -> void"
 0 0 24 29 1 #"\n"
 0 0 17 3 70
-(92
+(91
  #";Purpose: To use a reference and an appropiate target to set the valu"
  #"e"
 ) 0 0 24 29 1 #"\n"
 0 0 17 3 87
-(93
+(92
  #";of a reference(with the received direct-target), only if the referen"
  #"ce is balloteable."
 ) 0           0 0 0 24 29 1 #"\n"
@@ -13677,7 +13652,7 @@
 0 0 24 29 1 #"\n"
 0 0 24 29 1 #"\n"
 0 0 17 3 125
-(94
+(93
  #";***********************************Primitives***********************"
  #"********************************************************"
 ) 0 0 24 29 1 #"\n"
@@ -13694,12 +13669,12 @@
 #";Purpose: To compute an aritmetic operation. Allowed operations are:"
 0 0 24 29 1 #"\n"
 0 0 17 3 76
-(95
+(94
  #";addition, subtraction, multiplication and division. It also can conc"
  #"atenate"
 ) 0 0 24 29 1 #"\n"
 0 0 17 3 82
-(96
+(95
  #";strings or a number with a string when at least one of the arguments"
  #" is a string."
 ) 0           0 0 0 24 29 1 #"\n"
@@ -13895,12 +13870,12 @@
 #";add-or-concat"
 0 0 24 29 1 #"\n"
 0 0 17 3 72
-(97
+(96
  #";Contract: (number or string) * (number or string) -> (number or stri"
  #"ng)"
 ) 0 0 24 29 1 #"\n"
 0 0 17 3 77
-(98
+(97
  #";Purpose: If both arguments are numbers, this function adds them. If "
  #"at least"
 ) 0 0 24 29 1 #"\n"
@@ -14014,12 +13989,12 @@
 #";eval-un-octal-primitive"
 0 0 24 29 1 #"\n"
 0 0 17 3 89
-(99
+(98
  #";Contract: octal unary primitive (successor or predecessor) * octal -"
  #"> (number or string)"
 ) 0 0 24 29 1 #"\n"
 0 0 17 3 73
-(100
+(99
  #";Purpose: To apply the specified operator and return the resultant oc"
  #"tal."
 ) 0           0 0 0 24 29 1 #"\n"
@@ -14067,7 +14042,7 @@
 #";Contract: octal * octal binary primitive (+, -, *) * octal -> octal"
 0 0 24 29 1 #"\n"
 0 0 17 3 91
-(101
+(100
  #";Purpose: Compute the specified operation between octals and return t"
  #"he result as an octal."
 ) 0           0 0 0 24 29 1 #"\n"
@@ -14166,18 +14141,18 @@
 0 0 24 29 1 #"\n"
 0 0 24 29 1 #"\n"
 0 0 17 3 119
-(102
+(101
  #";*************************octal auxiliary functions******************"
  #"**************************************************"
 ) 0 0 24 29 1 #"\n"
-0 9         139 21           0 0           0 22 0 17 3 9 #";is-zero?"
+0 9         133 21           0 0           0 21 0 17 3 9 #";is-zero?"
 0 0 24 29 1 #"\n"
 0 0 17 3 27 #";Contract: octal -> boolean"
 0 0 24 29 1 #"\n"
 0 0 17 3 50 #";Purpose: To determine if the octal value is zero."
 0 0 24 29 1 #"\n"
 0 0 17 3 94
-(103
+(102
  #";Comments: In the positive and negative octal representations, and af"
  #"ter operating two octals,"
 ) 0 0 24 29 1 #"\n"
@@ -14191,8 +14166,7 @@
 0 0 17 3 1 #" "
 0 0 17 3 11 #"represented"
 0 0 17 3 1 #" "
-0 0 17 3 2 #"in"
-0 0 17 3 42 #" more than one way, which is inconvenient."
+0 0 17 3 44 #"in more than one way, which is inconvenient."
 0 0 24 29 1 #"\n"
 0 0 17 3 43 #";Examples: (0 0 0) () (0) (0 \"-\") (0 0 \"-\")"
 0           0 0 0 24 29 1 #"\n"
@@ -14292,12 +14266,12 @@
 0 0 17 3 25 #";Contract: octal -> octal"
 0 0 24 29 1 #"\n"
 0 0 17 3 73
-(104
+(103
  #";Purpose: To return the successor of an octal, which is the equivalen"
  #"t of"
 ) 0 0 24 29 1 #"\n"
 0 0 17 3 71
-(105
+(104
  #";adding 1 to the octal. It works for both positive and negative octal"
  #"s."
 ) 0           0 0 0 24 29 1 #"\n"
@@ -14509,12 +14483,12 @@
 0 0 17 3 25 #";Contract: octal -> octal"
 0 0 24 29 1 #"\n"
 0 0 17 3 75
-(106
+(105
  #";Purpose: To return the predecessor of an octal, which is the equival"
  #"ent of"
 ) 0 0 24 29 1 #"\n"
 0 0 17 3 77
-(107
+(106
  #";substracting 1 to the octal. It works for both positive and negative"
  #" octals."
 ) 0           0 0 0 24 29 1 #"\n"
@@ -14762,7 +14736,7 @@
 0 0 17 3 33 #";Contract: octal * octal -> octal"
 0 0 24 29 1 #"\n"
 0 0 17 3 80
-(108
+(107
  #";Purpose: Computes the substraction of the second octal received from"
  #" the first."
 ) 0           0 0 0 24 29 1 #"\n"
@@ -14971,7 +14945,7 @@
 0 0 24 29 1 #"\n"
 0 0 24 29 1 #"\n"
 0 0 17 3 98
-(109
+(108
  #";*******************************************list primitives**********"
  #"*****************************"
 ) 0 0 24 29 1 #"\n"
@@ -14981,7 +14955,7 @@
 0 0 17 3 38 #";Contract: scheme value * list -> list"
 0 0 24 29 1 #"\n"
 0 0 17 3 113
-(110
+(109
  #";Purpose: Add the first argument directly in the tail of the second a"
  #"rgument(the second argument must be a list)."
 ) 0           0 0 0 24 29 1 #"\n"
@@ -15033,7 +15007,7 @@
 #";eval-un-list-primitive"
 0 0 24 29 1 #"\n"
 0 0 17 3 80
-(111
+(110
  #";Contract: list unary primitive (merge, top, pop) * list -> scheme va"
  #"lue or list"
 ) 0 0 24 29 1 #"\n"
@@ -15115,7 +15089,7 @@
 0 0 17 3 25 #";Contract: list -> string"
 0 0 24 29 1 #"\n"
 0 0 17 3 76
-(112
+(111
  #";Purpose: Returns a string representing the specified list and its el"
  #"ements."
 ) 0           0 0 0 24 29 1 #"\n"
@@ -15166,8 +15140,7 @@
 0 0 14 3 15 #"merge-list-prim"
 0 0 24 3 1 #" "
 0 0 19 3 1 #"\""
-0 0 19 3 3 #"The"
-0 0 19 3 46 #" element ~s is not a number, string or symbol\""
+0 0 19 3 49 #"The element ~s is not a number, string or symbol\""
 0 0 24 3 2 #" ("
 0 0 14 3 3 #"car"
 0 0 24 3 1 #" "
@@ -15261,8 +15234,7 @@
 0 0 21 3 1 #"'"
 0 0 14 3 15 #"merge-list-prim"
 0 0 24 3 1 #" "
-0 0 19 3 1 #"\""
-0 0 19 3 50 #"This element is not a number, string or symbol ~s\""
+0 0 19 3 51 #"\"This element is not a number, string or symbol ~s\""
 0 0 24 3 2 #" ("
 0 0 14 3 3 #"car"
 0 0 24 3 1 #" "
@@ -15341,7 +15313,7 @@
 0 0 24 29 1 #"\n"
 0 0 24 29 1 #"\n"
 0 0 17 3 110
-(113
+(112
  #";****************************************nth-root-exp and power-exp a"
  #"uxiliar functions************************"
 ) 0 0 24 29 1 #"\n"
@@ -15354,7 +15326,7 @@
 #";Purpose: Computes the nth-root of the received number if possible."
 0 0 24 29 1 #"\n"
 0 0 17 3 89
-(114
+(113
  #";Comments: n must be integer. There are two different tolerances: One"
  #" for numbers greater"
 ) 0 0 24 29 1 #"\n"
@@ -15495,7 +15467,7 @@
 #";Purpose: Computes the nth-root of a number between 0 and 1."
 0 0 24 29 1 #"\n"
 0 0 17 3 91
-(115
+(114
  #";Comments: Tolerance: 0.001; This function uses the bisection method "
  #"to find the nth root, "
 ) 0 0 24 29 1 #"\n"
@@ -15646,17 +15618,17 @@
 #";Purpose: Computes the nth-root of a number greater than 1."
 0 0 24 29 1 #"\n"
 0 0 17 3 95
-(116
+(115
  #";Comments: Tolerance: 0.1; This function uses the Newthon-Raphson met"
  #"hod to find the nth root, "
 ) 0 0 24 29 1 #"\n"
 0 0 17 3 95
-(117
+(116
  #";The inicial guess is the natural log of k (the number for which we w"
  #"ant to find the nth root)."
 ) 0 0 24 29 1 #"\n"
 0 0 17 3 86
-(118
+(117
  #";When a result is very close to an integer (less than 0.02) the answe"
  #"r is the integer."
 ) 0           0 0 0 24 29 1 #"\n"
@@ -15716,7 +15688,7 @@
 0 0 21 3 4 #"0.02"
 0 0 24 3 2 #") "
 0 0 17 3 70
-(119
+(118
  #";If the answer is closer to an integer than 0.02, returns the integer"
  #"."
 ) 0 0 24 29 1 #"\n"
@@ -15785,7 +15757,7 @@
 0 0 17 3 45 #";Purpose: Computes the nth power of a number."
 0 0 24 29 1 #"\n"
 0 0 17 3 89
-(120
+(119
  #";Comments: This function computes x to the nth power. c is a counter "
  #"that starts in zero."
 ) 0           0 0 0 24 29 1 #"\n"
@@ -15840,7 +15812,7 @@
 0 0 24 29 1 #"\n"
 0 0 24 29 1 #"\n"
 0 0 17 3 82
-(121
+(120
  #";****************************************string primitives***********"
  #"*************"
 ) 0 0 24 29 1 #"\n"
@@ -15848,7 +15820,7 @@
 #";eval-un-string-primitive"
 0 0 24 29 1 #"\n"
 0 0 17 3 103
-(122
+(121
  #";Contract: string unary primitive (topstr, popstr, split, toSymbol)* "
  #"string -> string or list or symbol"
 ) 0 0 24 29 1 #"\n"
@@ -15999,7 +15971,7 @@
 0 0 17 3 36 #";Contract: string -> list of strings"
 0 0 24 29 1 #"\n"
 0 0 17 3 79
-(123
+(122
  #";Purpose: Returns a list representing the specified string and its ch"
  #"aracters.."
 ) 0           0 0 0 24 29 1 #"\n"
@@ -16080,7 +16052,7 @@
 #";eval-bin-string-primitive"
 0 0 24 29 1 #"\n"
 0 0 17 3 90
-(124
+(123
  #";Contract: string binary primitive (concat, join, substr)* string * s"
  #"cheme value -> string"
 ) 0 0 24 29 1 #"\n"
@@ -16090,7 +16062,7 @@
 0 0 17 3 27 #";concat: Merge two strings."
 0 0 24 29 1 #"\n"
 0 0 17 3 94
-(125
+(124
  #";join: Merge a string with a number or symbol. The string can be the "
  #"first or second argument."
 ) 0 0 24 29 1 #"\n"
@@ -16335,7 +16307,7 @@
 #";eval-un-length"
 0 0 24 29 1 #"\n"
 0 0 17 3 91
-(126
+(125
  #";Contract: string/list/vector unary primitive (length)*(list or vecto"
  #"r or string) -> number"
 ) 0 0 24 29 1 #"\n"
@@ -16395,8 +16367,7 @@
 0 0 21 3 1 #"'"
 0 0 14 3 14 #"eval-un-length"
 0 0 24 3 1 #" "
-0 0 19 3 1 #"\""
-0 0 19 3 52 #"Argument is neither a list nor vector nor string ~s\""
+0 0 19 3 53 #"\"Argument is neither a list nor vector nor string ~s\""
 0 0 24 3 1 #" "
 0 0 14 3 8 #"eval-exp"
 0 0 24 3 2 #"))"
@@ -16409,7 +16380,7 @@
 0 0 24 29 1 #"\n"
 0 0 24 3 2 #"  "
 0 0 17 3 90
-(127
+(126
  #";**************************************************vector primitives*"
  #"*********************"
 ) 0 0 24 29 1 #"\n"
@@ -16417,12 +16388,12 @@
 #";eval-bin-set-vector-primitive"
 0 0 24 29 1 #"\n"
 0 0 17 3 90
-(128
+(127
  #";Contract: vector binary primitive (set-vector)* integer * scheme val"
  #"ue * vector -> vector"
 ) 0 0 24 29 1 #"\n"
 0 0 17 3 71
-(129
+(128
  #";Purpose: change an item within vector to a scheme value at position "
  #"N."
 ) 0           0 0 0 24 29 1 #"\n"
@@ -16540,7 +16511,7 @@
 #";eval-bin-ref-vector-primitive"
 0 0 24 29 1 #"\n"
 0 0 17 3 81
-(130
+(129
  #";Contract: vector binary primitive (ref-vector)* integer * vector -> "
  #"scheme value"
 ) 0 0 24 29 1 #"\n"
@@ -16651,7 +16622,7 @@
 0 0 24 29 1 #"\n"
 0 0 24 3 2 #"  "
 0 0 17 3 129
-(131
+(130
  #";*************************************************records primitives*"
  #"************************************************************"
 ) 0 0 24 29 1 #"\n"
@@ -16659,7 +16630,7 @@
 #";eval-bin-ref-record-primitive"
 0 0 24 29 1 #"\n"
 0 0 17 3 90
-(132
+(131
  #";Contract: record binary primitive (ref-record)* identifier * scheme "
  #"value -> Scheme value"
 ) 0 0 24 29 1 #"\n"
@@ -16740,7 +16711,7 @@
 0 0 17 3 37 #";Contract: identifier, list -> number"
 0 0 24 29 1 #"\n"
 0 0 17 3 78
-(133
+(132
  #";Purpose: auxilary function that helps to find the index wanted withi"
  #"n record."
 ) 0           0 0 0 24 29 1 #"\n"
@@ -16808,12 +16779,12 @@
 #";eval-bin-set-record-primitive"
 0 0 24 29 1 #"\n"
 0 0 17 3 93
-(134
+(133
  #";Contract: record binary primitive (set-vector)* identifier * scheme "
  #"value * record -> record"
 ) 0 0 24 29 1 #"\n"
 0 0 17 3 77
-(135
+(134
  #";Purpose: change an item within record to a scheme value with the ide"
  #"ntifier."
 ) 0           0 0 0 24 29 1 #"\n"
@@ -17067,7 +17038,7 @@
 0 0 24 29 1 #"\n"
 0 0 24 3 2 #"  "
 0 0 17 3 118
-(136
+(135
  #";**********************************************bool primitives*******"
  #"*************************************************"
 ) 0 0 24 29 1 #"\n"
@@ -17075,7 +17046,7 @@
 #";eval-un-bool-primitive"
 0 0 24 29 1 #"\n"
 0 0 17 3 69
-(137
+(136
  #";Contract: boolean unary primitive (null?)* list or vector -> boolean"
 ) 0 0 24 29 1 #"\n"
 0 0 17 3 49 #";Purpose: Check if the argument is a list/vector."
@@ -17152,7 +17123,7 @@
 0 0 24 29 1 #"\n"
 0 0 24 3 2 #"  "
 0 0 17 3 128
-(138
+(137
  #";*********************************************number, vector and list"
  #" unary primitives******************************************"
 ) 0 0 24 29 1 #"\n"
@@ -17160,12 +17131,12 @@
 #";eval-un-list-vec-num-primitive"
 0 0 24 29 1 #"\n"
 0 0 17 3 115
-(139
+(138
  #";Contract: list/vector/number unary primitive (add1,sub1)* (list or v"
  #"ector or number) -> (list or vector or number)"
 ) 0 0 24 29 1 #"\n"
 0 0 17 3 88
-(140
+(139
  #";Purpose: primitive-un where you can add or substract 1 unit to a lis"
  #"t, vector or number"
 ) 0           0 0 0 24 29 1 #"\n"
@@ -17280,8 +17251,7 @@
 0 0 24 3 1 #" "
 0 0 19 3 1 #"\""
 0 0 19 3 3 #"Not"
-0 0 19 3 1 #" "
-0 0 19 3 50 #"a valid expression to either add 1 or substract 1\""
+0 0 19 3 51 #" a valid expression to either add 1 or substract 1\""
 0 0 24 3 2 #"))"
 0 0 24 29 1 #"\n"
 0 0 24 3 22 #"                     )"
@@ -17379,8 +17349,7 @@
 0 0 24 3 1 #" "
 0 0 19 3 1 #"\""
 0 0 19 3 3 #"Not"
-0 0 19 3 1 #" "
-0 0 19 3 50 #"a valid expression to either add 1 or substract 1\""
+0 0 19 3 51 #" a valid expression to either add 1 or substract 1\""
 0 0 24 3 2 #"))"
 0 0 24 29 1 #"\n"
 0 0 24 3 22 #"                     )"
@@ -17396,7 +17365,7 @@
 0 0 24 29 1 #"\n"
 0 0 24 3 2 #"  "
 0 0 17 3 111
-(141
+(140
  #";***********************************************pred primitives (<,>,"
  #" =<, >=, ==, <>)**************************"
 ) 0 0 24 29 1 #"\n"
@@ -17404,7 +17373,7 @@
 #";eval-bin-pred-bool-primitive"
 0 0 24 29 1 #"\n"
 0 0 17 3 86
-(142
+(141
  #";Contract: boolean binary primitive (<, >, =<, >=, == ,<>)* number * "
  #"number -> boolean"
 ) 0 0 24 29 1 #"\n"
@@ -17525,7 +17494,7 @@
 0 0 24 29 1 #"\n"
 0 0 24 3 2 #"  "
 0 0 17 3 107
-(143
+(142
  #";************************************************logic primitives (or"
  #", and, xor)***************************"
 ) 0 0 24 29 1 #"\n"
@@ -17533,7 +17502,7 @@
 #";eval-bin-bool-logic-primitive"
 0 0 24 29 1 #"\n"
 0 0 17 3 75
-(144
+(143
  #";Contract: boolean logic binary primitive (and, or, xor) boolean -> b"
  #"oolean"
 ) 0 0 24 29 1 #"\n"
@@ -17863,7 +17832,7 @@
 0 0 17 3 39 #";Contract: boolean * boolean -> boolean"
 0 0 24 29 1 #"\n"
 0 0 17 3 81
-(145
+(144
  #";Purpose: is a logical operation that is true if and only if its argu"
  #"ments differ"
 ) 0           0 0 0 24 29 1 #"\n"
@@ -17897,7 +17866,7 @@
 0 0 17 3 34 #";Contract: boolean-list -> boolean"
 0 0 24 29 1 #"\n"
 0 0 17 3 74
-(146
+(145
  #";Purpose: it decides whether all the elements of a list are boolean o"
  #"r not"
 ) 0           0 0 0 24 29 1 #"\n"
@@ -17943,7 +17912,7 @@
 0 0 24 29 1 #"\n"
 0 0 24 3 2 #"  "
 0 0 17 3 122
-(147
+(146
  #";*********************************logic primitives (not odd? even?)**"
  #"*****************************************************"
 ) 0 0 24 29 1 #"\n"
@@ -17951,7 +17920,7 @@
 #";eval-a-logic-primitive"
 0 0 24 29 1 #"\n"
 0 0 17 3 101
-(148
+(147
  #";Contract: boolean logic unary primitive (not, even?, odd?, boolean?,"
  #" char?)* Scheme Value -> boolean"
 ) 0 0 24 29 1 #"\n"
@@ -18095,7 +18064,7 @@
 0 0 17 3 34 #";Contract: scheme value -> boolean"
 0 0 24 29 1 #"\n"
 0 0 17 3 73
-(149
+(148
  #";Purpose: it tells whether all the elements of a list are numbers or "
  #"not."
 ) 0           0 0 0 24 29 1 #"\n"
@@ -18148,7 +18117,7 @@
 0 0 17 3 28 #";Contract: vector -> boolean"
 0 0 24 29 1 #"\n"
 0 0 17 3 74
-(150
+(149
  #";Purpose: it tells whether all the elements of a vector are numbers o"
  #"r not"
 ) 0           0 0 0 24 29 1 #"\n"
@@ -18393,7 +18362,7 @@
 0 0 24 29 1 #"\n"
 0 0 24 3 2 #"  "
 0 0 17 3 92
-(151
+(150
  #";********************************************************************"
  #"***********************"
 ) 0 0 24 29 1 #"\n"
@@ -18441,7 +18410,7 @@
 0 0 24 29 1 #"\n"
 0 0 24 3 2 #"  "
 0 0 17 3 99
-(152
+(151
  #";************************************LEXICA**************************"
  #"******************************"
 ) 0 0 24 29 1 #"\n"
@@ -18669,7 +18638,7 @@
 0 0 24 3 1 #" "
 0 0 24 29 1 #"\n"
 0 0 24 3 1 #" "
-0 0 17 3 99 152 0 0 24 29 1 #"\n"
+0 0 17 3 99 151 0 0 24 29 1 #"\n"
 0 0 17 3 30 #";unic-exp and not-assigned-exp"
 0 0 24 29 1 #"\n"
 0 0 24 3 1 #" "
@@ -18689,7 +18658,7 @@
 0 0 14 3 10 #"scan&parse"
 0 0 24 3 1 #" "
 0 0 19 3 75
-(153
+(152
  #"\"{} endGlobal var { c = func(x) { allot x <- 5 }, b = 2 }; call (c -"
  #"> &b )\""
 ) 0 0 24 3 1 #")"
@@ -18702,7 +18671,7 @@
 0 0 14 3 10 #"scan&parse"
 0 0 24 3 1 #" "
 0 0 19 3 72
-(154
+(153
  #"\"{} endGlobal var {x = x8 (1, 2, 4), y = x8 (4, 3, 6)}; octOp [ x + "
  #"y ]\""
 ) 0 0 24 3 1 #")"
@@ -18726,7 +18695,7 @@
 0 0 14 3 10 #"scan&parse"
 0 0 24 3 1 #" "
 0 0 19 3 81
-(155
+(154
  #"\"{} endGlobal set-record(x $sisas$ create-record{x : $David$, y : $H"
  #"ern\xC3\xA1ndez$})\""
 ) 0 0 24 3 1 #")"
@@ -18739,7 +18708,7 @@
 0 0 14 3 10 #"scan&parse"
 0 0 24 3 1 #" "
 0 0 19 3 73
-(156
+(155
  #"\"{} endGlobal ref-record(x create-record{x : $David$, y : $Hern\xC3"
  #"\xA1ndez$})\""
 ) 0 0 24 3 1 #")"
