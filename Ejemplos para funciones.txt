@@ -1,0 +1,11 @@
+{} endGlobal var {Function g = func(Int pos, Vector vec) { ref-vector(pos vec) } };
+
+var { Function h = func( (Int,Vector->Int) j, Int x) { call (j -> x, vector[1,2,3] ) } };
+
+call (h -> g, 2)
+
+
+g = (func-type (pos vec) (int-type vector-type) null <<ref-vector (pos vec) >> )
+
+h = (func-type '() ( (func-type '() (int-type vector) null null-body-exp) int-type) null <<call j -> x....>> )
+
